@@ -21,7 +21,6 @@ function findById(id) {
 
 async function add(newScheme) {
   const [id] = await db('schemes').insert(newScheme);
-
   return findById(id);
 }
 
